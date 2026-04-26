@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campus Safety Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/emergencyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 Emergency Alert"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📍 View Map"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💬 Chat with Responders"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/dashboardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Dashboard"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚪 Logout"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+</LinearLayout>
