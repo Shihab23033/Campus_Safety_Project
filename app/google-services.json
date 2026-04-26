@@ -1,0 +1,58 @@
+{
+  "type": "service_account",
+  "project_id": "campus-safety-app",
+  "private_key_id": "key_id",
+  "private_key": "private_key",
+  "client_email": "firebase-adminsdk@campus-safety-app.iam.gserviceaccount.com",
+  "client_id": "123456789",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase%40campus-safety-app.iam.gserviceaccount.com",
+  "project_info": {
+    "project_number": "123456789",
+    "project_id": "campus-safety-app",
+    "storage_bucket": "campus-safety-app.appspot.com"
+  },
+  "firebase": [
+    {
+      "project_credentials": {
+        "type": "service_account",
+        "project_id": "campus-safety-app",
+        "private_key_id": "key_id",
+        "private_key": "private_key",
+        "client_email": "firebase-adminsdk@campus-safety-app.iam.gserviceaccount.com",
+        "client_id": "123456789",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase%40campus-safety-app.iam.gserviceaccount.com"
+      },
+      "database_url": "https://campus-safety-app.firebaseio.com",
+      "storage_bucket": "campus-safety-app.appspot.com"
+    }
+  ],
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123456789:android:abcdef0123456789",
+        "android_client_info": {
+          "package_name": "com.mbstu.campussafety"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDummy_Key_Replace_With_Real_Key"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

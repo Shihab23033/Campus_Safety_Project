@@ -1,88 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/registerBtn"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="199dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="50dp"
-        android:background="#FFFFFF"
-        android:backgroundTintMode="add"
-        android:gravity="center"
-        android:text="Welcome"
-        android:textSize="34sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campus Safety Dashboard"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/userEmailTxt"
-        android:layout_width="298dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="68dp"
-        android:ems="10"
-        android:hint="Enter Email"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/userPassTxt"
-        android:layout_width="296dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Enter Passward"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userEmailTxt" />
-
-    <CheckBox
-        android:id="@+id/showPassCheck"
-        android:layout_width="138dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="16dp"
-        android:text="Show passward"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userPassTxt" />
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
 
     <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="112dp"
-        android:text="Login"
-        android:textAlignment="gravity"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userPassTxt" />
+        android:id="@+id/emergencyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 Emergency Alert"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="24dp"
-        android:text="Register"
-        android:textColorLink="#165A90"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+        android:id="@+id/mapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📍 View Map"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💬 Chat with Responders"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/dashboardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Dashboard"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚪 Logout"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+</LinearLayout>

@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.CampusSafety" parent="Base.Theme.CampusSafety" />
+    
+    <style name="Theme.CampusSafety.NoActionBar" parent="Theme.CampusSafety">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
 </resources>
