@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- For development: Allow cleartext (HTTP) traffic only for localhost and emulator IP -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Allow HTTP for Android Emulator -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <!-- Allow HTTP for localhost -->
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+
+    <!-- For production, only HTTPS is allowed (default) -->
+    <default-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </default-config>
+</network-security-config>

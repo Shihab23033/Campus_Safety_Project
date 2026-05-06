@@ -67,7 +67,12 @@ public class RegisterActivity extends AppCompatActivity {
             } else if (!password.equals(confirmPassword)) {
                 Toast.makeText(RegisterActivity.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
             } else {
-                User user = new User(email, fullName, phone);
+                // Split full name into firstName and lastName
+                String[] nameParts = fullName.split(" ", 2);
+                String firstName = nameParts[0];
+                String lastName = nameParts.length > 1 ? nameParts[1] : "";
+                
+                User user = new User(email, password, firstName, lastName, phone);
                 authViewModel.register(user);
             }
         });

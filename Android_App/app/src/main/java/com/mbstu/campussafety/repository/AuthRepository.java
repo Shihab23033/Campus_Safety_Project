@@ -82,7 +82,8 @@ public class AuthRepository {
                             UserEntity userEntity = new UserEntity();
                             userEntity.userId = authResponse.getUser().getUserId();
                             userEntity.email = authResponse.getUser().getEmail();
-                            userEntity.fullName = authResponse.getUser().getFullName();
+                            userEntity.first_name = authResponse.getUser().getFirstName();
+                            userEntity.last_name = authResponse.getUser().getLastName();
                             userEntity.phoneNumber = authResponse.getUser().getPhoneNumber();
                             userEntity.role = authResponse.getUser().getRole();
                             database.userDao().insert(userEntity);

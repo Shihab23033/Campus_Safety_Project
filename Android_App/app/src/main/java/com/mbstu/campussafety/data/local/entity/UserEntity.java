@@ -9,7 +9,9 @@ public class UserEntity {
     public int id;
     public String userId;
     public String email;
-    public String fullName;
+    public String first_name;
+
+    public String last_name;
     public String phoneNumber;
     public String profileImageUrl;
     public String role;

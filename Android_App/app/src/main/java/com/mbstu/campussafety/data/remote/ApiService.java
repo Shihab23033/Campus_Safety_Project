@@ -29,7 +29,7 @@ public interface ApiService {
     @POST("auth/otp/send")
     Call<OTPResponse> sendOTP(@Body OTPRequest request);
 
-    @POST("auth/otp/verify")
+    @POST("auth/verify-otp")
     Call<AuthResponse> verifyOTP(@Body OTPVerifyRequest request);
 
     @POST("auth/forgot-password")
